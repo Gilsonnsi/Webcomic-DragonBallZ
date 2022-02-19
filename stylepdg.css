@@ -1,0 +1,273 @@
+body {
+  font-family: "Segoe UI", Arial, Verdana, sans-serif;
+  font-size: 1em;
+  background-image: url(https://i.blogs.es/c81dd3/dragon-ball-z-tv-abierta-mexico-canal-5-6-diciembre/1366_2000.jpeg)
+}
+
+header{
+  width: 80%;
+  padding: 0.3em 3em;
+  margin: 0.2em 3em;
+  border: 0.2em solid black;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+nav,
+aside,
+article,
+footer {
+  width: 80%;
+  padding: 0.2em 1em;
+  margin: 0.1em -1em;
+  border: 0.2em solid black;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+header {
+  text-align: center;
+  background-image: url(https://www.kamehashop.fr/9983-large_default/dragon-ball-z-tapis-de-souris-dbz-boule-de-cristal.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 10%;
+  position: center ;
+}
+
+article,
+footer,
+nav {
+  background-color: cornsilk;
+}
+
+section {
+  margin-left: 250px;
+}
+
+nav {
+  text-align: auto;
+}
+
+aside {
+  height: auto;
+  background-image: url(images/to_do_list.jpg);
+  background-position: 50% 50%;
+  background-size: 25%;
+}
+
+article {
+  color: purple;
+  overflow: hidden;
+}
+
+footer {
+  color: mediumblue;
+  width: 300px;
+  background-image: linear-gradient(to top, #eeeeee, #990044)
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3em;
+}
+
+h2 {
+  color: darkgreen;
+  font-size: 1.5em;
+  border: 0.2em solid gold;
+  border-radius: 10px;
+  margin: 0.5em;
+  text-align: center;
+  background-color: rgb(68, 0, 11);
+  transition: color 0.5s;
+}
+
+h2:hover {
+  color: white;
+  transform-origin: bottom left;
+  transform: translate(1em);
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 5px solid black;
+  width: 10%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.gauche {
+  position: fixed;
+  width: 200px;
+}
+
+nav>li {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+li:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+li:nth-child(even) {
+  background-color: lightblue;
+}
+
+a[href$=".pdf"] {
+  background-image: url("images/Mouhmeu.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2.5em;
+}
+
+a {
+  transition: margin 1s;
+}
+
+a:hover {
+  background-color: grey;
+  border: 3px solid black;
+  margin: 0.2em;
+}
+
+table,
+th,
+td,
+caption {
+  border-collapse: collapse;
+  border: 3px solid blue;
+  padding: 0.5em;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+thead,
+tfoot {
+  background-color: lightgreen;
+}
+
+td:hover {
+  background-color: yellowgreen;
+  color: blue;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+form {
+  padding: 1em;
+  margin: 1em;
+  border: 5px solid darkred;
+  border-radius: 30px;
+}
+
+form>label,
+fieldset {
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-weight: bold;
+}
+
+form>fieldset {
+  margin: 1em;
+  padding: 2em;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+
+/* ---- animation CSS cube ---- */
+
+@keyframes cube-anim {
+  from {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(0.1) scaleY(0.1) scaleZ(0.1);
+  }
+  50% {
+      transform: rotateX(360deg) rotateY(1800deg) rotateZ(1800deg) scaleX(2) scaleY(2) scaleZ(2);
+  }
+  to {
+      transform: rotateX(720deg) rotateY(2160deg) rotateZ(360deg) scaleX(0.1) scaleY(0.1) scaleZ(0.1);
+  }
+}
+
+article#aAnimation {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  width: 400px;
+}
+
+#cube3D {
+  transform-style: preserve-3d;
+  /* animation-name: cube-anim; */
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  width: 106px;
+  height: 106px;
+  margin: 106px;
+}
+
+#cube3D>div {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100px;
+  line-height: 100px;
+  font-size: 60px;
+  text-align: center;
+  border: 3px solid #336;
+  position: absolute;
+  backface-visibility: visible;
+}
+
+#cube3D>#face1 {
+  transform: translateZ(50px);
+}
+
+#cube3D>#face6 {
+  transform: translateZ(-50px) rotateY(180deg);
+}
+
+#cube3D>#face2 {
+  transform: translateX(-50px) rotateY(-90deg);
+}
+
+#cube3D>#face5 {
+  transform: translateX(50px) rotateY(90deg);
+  background-image: url(images/to_do_list.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+#cube3D>#face3 {
+  transform: translateY(-50px) rotateX(90deg);
+}
+
+#cube3D>#face4 {
+  transform: translateY(50px) rotateX(-90deg);
+  background-image: url(images/Mouhmeu.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  aside {
+      display: none;
+  }
+}
