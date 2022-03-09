@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      body {
+        background-color: #000000;
+        font-family: "Comic Sans MS", sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 40px 0 0 20px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #d02626;
+      }
+      .comic {
+        max-width: 826px;
+        margin: 60px auto 0;
+      }
+      .scene {
+        width: 250px;
+        height: 250px;
+        border: 3px solid black;
+        background: white;
+        margin: 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .scene img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .caption {
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #e2e971;
+        text-align: left;
+        top: 0;
+      }
+      .caption.bottom {
+        bottom: 0;
+        top:auto;
+        border-top: 2px solid black;
+      }
+      .caption.top {
+        top: 0;
+        border-bottom: 2px solid black;
+      }
+      .speech {
+        width: 40%;
+        border-radius:50%;
+        border: 2px solid black;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        background: snow ;
+        padding: 20px;
+        top: -15px;
+        text-align: center;
+      }
+      /* Advanced CSS for the speech pointer */
+      .speech:after {
+        border-color: snow transparent;
+        border-style: solid;
+        border-width: 13px 13px 0;
+        bottom: -11px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-14px;
+        position: absolute;
+        width: 0;
+      }
+      .speech:before {
+        border-color: black transparent;
+        border-style: solid;
+        border-width: 16px 16px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-17px;
+        position: absolute;
+        width: 0;
+      }
+      .speech.left {
+        left:-15px;
+      }
+      .speech.right {
+        right:-15px;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<!-- Etape 1: Changer le nom de son web comic -->
+    <h1>Page 6</h1>
+
+<!-- C'est ici que commence le WEB comic -->
+    <div class="comic">
+
+<!-- Chaque scéne est identifier par la classe scene -->
+
+      <div class="scene">
+        <p class="caption bottom">Transformation!</p>
+        <p class="speech left">Bon passons à la vitesse supérieur</p>
+        <img src="https://i.skyrock.net/8699/12568699/pics/312883643.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="caption top">Tiens ça!</p>
+        <img src="https://celebrity.fm/wp-content/uploads/2022/02/Who-killed-Kid-Buu-732x412.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech left">QUOI!!!</p>
+        <img src="https://cdn.shopify.com/s/files/1/0039/8668/6063/files/20191228-goku-contra-kid-boo-falshback-1280x720-1_480x480.jpg?v=1610550024" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">Et voila c'est fini</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-nHugHdzmIUBDYPnZu9gHoubZeptXryuQA&usqp=CAU" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="https://pa1.narvii.com/6411/eae5e736e1a7d25f0c5785a73fbb12c30e7039ee_hq.gif" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="caption bottom">Tu ne me tuera jamais</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPtr_cnpKvZCO1gn21Puoq81kzhbn57ISu4sRDiX61JCNrzkHLYqUgSnHiOpC91IL3f6Y&usqp=CAU" alt="" />
+      </div>
+
+      <!-- 
+C'est la fin du WEB comic

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page _8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      body {
+        background-color: #000000;
+        font-family: "Comic Sans MS", sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 40px 0 0 20px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #d02626;
+      }
+      .comic {
+        max-width: 826px;
+        margin: 60px auto 0;
+      }
+      .scene {
+        width: 250px;
+        height: 250px;
+        border: 3px solid black;
+        background: white;
+        margin: 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .scene img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .caption {
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #e2e971;
+        text-align: left;
+        top: 0;
+      }
+      .caption.bottom {
+        bottom: 0;
+        top:auto;
+        border-top: 2px solid black;
+      }
+      .caption.top {
+        top: 0;
+        border-bottom: 2px solid black;
+      }
+      .speech {
+        width: 40%;
+        border-radius:50%;
+        border: 2px solid black;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        background: snow ;
+        padding: 20px;
+        top: -15px;
+        text-align: center;
+      }
+      /* Advanced CSS for the speech pointer */
+      .speech:after {
+        border-color: snow transparent;
+        border-style: solid;
+        border-width: 13px 13px 0;
+        bottom: -11px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-14px;
+        position: absolute;
+        width: 0;
+      }
+      .speech:before {
+        border-color: black transparent;
+        border-style: solid;
+        border-width: 16px 16px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-17px;
+        position: absolute;
+        width: 0;
+      }
+      .speech.left {
+        left:-15px;
+      }
+      .speech.right {
+        right:-15px;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<!-- Etape 1: Changer le nom de son web comic -->
+    <h1>Page 8</h1>
+
+<!-- C'est ici que commence le WEB comic -->
+    <div class="comic">
+
+<!-- Chaque scéne est identifier par la classe scene -->
+
+      <div class="scene">
+        <p class="caption bottom">Enfin</p>
+        <p class="speech left">On va bien le manger</p>
+        <img src="https://www.cloneweb.net/wp-content/uploads/Still001.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="caption top">Végéta je t'ai dis que je te vengerai</p>
+        <img src="https://i-mom.unimedias.fr/2020/09/16/dragon-ball-songoku.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="caption bottom">3 heures plus tard</p>
+        <img src="https://www.publicdomainpictures.net/pictures/40000/nahled/black-background-1365087945eJf.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">Bah alors y'a combien de buu</p>
+        <img src="https://cdn.shopify.com/s/files/1/0252/1736/8154/files/monaka_goku_large.png?v=1586444046" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="https://i.skyrock.net/0960/40870960/pics/2266297321_1.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="caption bottom">Goku rejoint sa femme</p>
+        <img src="https://cdn.shopify.com/s/files/1/2365/2477/files/famille_2048x2048.png?v=1579455550" alt="" />
+      </div>
+
+      <!-- 
+C'est la fin du WEB comic
+
+
+
+    </div>
+
+    <!-- Disclaimer for images -->
+    <footer>
+      All images taken from <a href="http://flickr.com">flickr.com</a>
+    </footer>
+
+  </body>
+</html>

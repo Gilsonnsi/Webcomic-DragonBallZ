@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 9</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      body {
+        background-color: #000000;
+        font-family: "Comic Sans MS", sans-serif;
+        line-height: 1.2;
+        text-align: center;
+        padding: 40px 0 0 20px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #d02626;
+      }
+      .comic {
+        max-width: 826px;
+        margin: 60px auto 0;
+      }
+      .scene {
+        width: 250px;
+        height: 250px;
+        border: 3px solid black;
+        background: white;
+        margin: 8px;
+        display: inline-block;
+        position: relative;
+      }
+      .scene img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      .caption {
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #e2e971;
+        text-align: left;
+        top: 0;
+      }
+      .caption.bottom {
+        bottom: 0;
+        top:auto;
+        border-top: 2px solid black;
+      }
+      .caption.top {
+        top: 0;
+        border-bottom: 2px solid black;
+      }
+      .speech {
+        width: 40%;
+        border-radius:50%;
+        border: 2px solid black;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        background: snow ;
+        padding: 20px;
+        top: -15px;
+        text-align: center;
+      }
+      /* Advanced CSS for the speech pointer */
+      .speech:after {
+        border-color: snow transparent;
+        border-style: solid;
+        border-width: 13px 13px 0;
+        bottom: -11px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-14px;
+        position: absolute;
+        width: 0;
+      }
+      .speech:before {
+        border-color: black transparent;
+        border-style: solid;
+        border-width: 16px 16px 0;
+        bottom: -15px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left:-17px;
+        position: absolute;
+        width: 0;
+      }
+      .speech.left {
+        left:-15px;
+      }
+      .speech.right {
+        right:-15px;
+      }
+      footer {
+        clear: both;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<!-- Etape 1: Changer le nom de son web comic -->
+    <h1>Page 9</h1>
+
+<!-- C'est ici que commence le WEB comic -->
+    <div class="comic">
+
+<!-- Chaque scéne est identifier par la classe scene -->
+
+      <div class="scene">
+        <p class="caption bottom">se repose</p>
+        <p class="speech left">C'est trop bon </p>
+        <img src="https://img.20mn.fr/_nOztCOjTluISTGHlyTpQQ/830x532_recettes-legendaires-dragon-ball-comment-engloutir-bols-riz-comme-goku.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="caption bottom">Soudain</p>
+        <img src="https://2img.net/h/images3.wikia.nocookie.net/__cb20120220152761/dragonball/images/3/3d/HyperExplosiveDemonWaveBlast.JPG" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech left">C'est quoi cette explosion</p>
+        <img src="https://comic.systems/images/WildBunch/DragonBallSuperBroly/DragonBallSuperBroly-images-13659" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">Je dois déjà partir mais tu seras toujours dans mon coeur</p>
+        <img src="https://i.ytimg.com/vi/k7qIt6v12K8/maxresdefault.jpg" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <p class="speech right">Goku dépèche toi!!!</p>
+        <img src="https://wiki.rpgdbz.com/sites/default/files/styles/table/public/2019-12/piccolovsandroid17.png?itok=IFocdpDw" alt="" />
+      </div>
+
+
+      <div class="scene">
+        <img src="https://www.japanfm.fr/wp-content/uploads/2022/01/a-53.jpg" alt="" />
+      </div>
+
+      <!-- 
+C'est la fin du WEB comic
+
+
+
+    </div>
+
+    <!-- Disclaimer for images -->
+    <footer>
+      All images taken from <a href="http://flickr.com">flickr.com</a>
+    </footer>
+
+  </body>
+</html>
